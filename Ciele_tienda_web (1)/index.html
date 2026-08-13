@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cielé | Accesorios para mujeres</title>
+  <meta name="description" content="Cielé — accesorios para mujeres. Descubre nuestra colección.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">Cielé</a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotras">Nosotras</a>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">ACCESORIOS PARA MUJERES</p>
+        <h1>Tu estilo,<br><em>tu esencia.</em></h1>
+        <p>Detalles que hacen especial cada momento. Descubre accesorios pensados para resaltar tu estilo.</p>
+        <a class="btn" href="#catalogo">Ver colección</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-placeholder">C<br><span>CIELÉ</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COLECCIÓN CIELÉ</p>
+          <h2>Encuentra tu favorito</h2>
+        </div>
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Buscar accesorio...">
+        </div>
+      </div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <section class="about" id="nosotras">
+      <p class="eyebrow">SOBRE CIELÉ</p>
+      <h2>Pequeños detalles,<br>grandes momentos.</h2>
+      <p>Una tienda creada para mujeres que disfrutan expresar su personalidad a través de los detalles.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Cielé</strong>
+    <span>Accesorios para mujeres</span>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalImage" class="modal-image"></div>
+      <div class="modal-info">
+        <p class="eyebrow">DETALLE</p>
+        <h2 id="modalName"></h2>
+        <p id="modalPrice" class="price"></p>
+        <p id="modalStock"></p>
+        <a id="whatsapp" class="btn full" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
